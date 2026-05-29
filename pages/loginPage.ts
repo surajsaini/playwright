@@ -1,6 +1,7 @@
 import { Page, Locator } from "@playwright/test"
 
 
+
 export class loginPage {
     readonly page: Page;
     readonly username: Locator;
@@ -19,13 +20,10 @@ export class loginPage {
         await this.page.goto('https://thedummysite.com/');
     }
 
-    async login() {
+    async login(usern: string, passw: string) {
 
-        await this.username.fill("demo");
-        await this.password.fill("demo123");
+        await this.username.fill(usern);
+        await this.password.fill(passw);
         await this.signIn.click();
-
-
     }
-
 }

@@ -7,6 +7,10 @@ export default defineConfig({
   reporter: 'html',
   use: {
     trace: 'on-first-retry',
+    headless: false,
+    launchOptions: {
+      //slowMo: 1000,
+    },
 
   },
 
@@ -20,22 +24,22 @@ export default defineConfig({
     },
     // Actual test projects depend on setup and reuse storage state
     {
-      name: 'chromium',
+      name: 'chromiu----m',
       use: { ...devices['Desktop Chrome'], storageState: 'storageState.json' },
       dependencies: ['setup'],
     },
     {
-      name: 'chromiu--m',
+      name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'], storageState: 'authFile.json' },
+      use: { ...devices['Desktop Firefox'], storageState: 'storageState.json' },
       dependencies: ['setup'],
     },
     {
       name: 'webkit',
-      use: { ...devices['Desktop Safari'], storageState: 'authFile.json' },
+      use: { ...devices['Desktop Safari'], storageState: 'storageState.json' },
       dependencies: ['setup'],
     },
   ],

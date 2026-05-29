@@ -2,10 +2,10 @@
   "cookies": [
     {
       "name": "connect.sid",
-      "value": "s%3AmHbrnZJL7ltTgQuX93XUpyGNNPpvvz2c.8ktgREKo5vmBfwoZ%2FXOoCuCqnCCs%2FpXi%2FXN0GNbPbPA",
+      "value": "s%3AjlDn0mgn_Z1RzITA4v94BTJ0FlCCKiDc.BM%2BZinWlPRBGAaQxNX0LFsexipl0sLk7sScJxw00Keo",
       "domain": "thedummysite.com",
       "path": "/",
-      "expires": 1778450500.135671,
+      "expires": 1779909665.63761,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
@@ -15,7 +15,7 @@
       "value": "accepted",
       "domain": "thedummysite.com",
       "path": "/",
-      "expires": 1809900099.10411,
+      "expires": 1811359260.852633,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
