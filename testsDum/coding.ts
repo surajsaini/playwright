@@ -1,15 +1,9 @@
 
 
 function pyramid() {
-
-    let str: string = "my name is mohit";
-    const arr: string = str.split(" ")
-        .map(w => w[0].toUpperCase() + w.slice(1))
-        .join(" ");
+    const arr: number[] = [10, 5, 20, 8];
 
 
-
-    console.log(arr);
 }
 
 

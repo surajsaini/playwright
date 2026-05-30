@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 
-test.only('iframe1', async ({ page }) => {
+test('iframe1', async ({ page }) => {
     await page.goto('https://www.globalsqa.com/demo-site/frames-and-windows/');
     await page.getByRole('tab', { name: 'iFrame' }).click();
     //   const frame1 = page.frame({ name: 'globalSqa' });

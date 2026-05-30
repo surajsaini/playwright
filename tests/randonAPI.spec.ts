@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-test.only("api1", async ({ request }) => {
+test("api1", async ({ request }) => {
     
         const response = await request.get('https://automationexercise.com/api/productsList');
         expect(response.status()).toBe(200);

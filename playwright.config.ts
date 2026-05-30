@@ -2,7 +2,7 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
-  fullyParallel: false,
+  fullyParallel: true,
   workers: 1,
   reporter: 'html',
   use: {
@@ -15,9 +15,11 @@ export default defineConfig({
   },
 
   projects: [
+    
+    
     // Runs first: creates authFile.json
 
-    {
+    /* {
       name: 'setup',
       use: { ...devices['Desktop Chrome'] },
       testMatch: /.*\.setup\.ts/,
@@ -27,20 +29,11 @@ export default defineConfig({
       name: 'chromiu----m',
       use: { ...devices['Desktop Chrome'], storageState: 'storageState.json' },
       dependencies: ['setup'],
-    },
+    }, */
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'], storageState: 'storageState.json' },
-      dependencies: ['setup'],
-    },
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'], storageState: 'storageState.json' },
-      dependencies: ['setup'],
-    },
+
   ],
 });
